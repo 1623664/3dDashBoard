@@ -70,6 +70,7 @@ Window {
                 textItem.font.pixelSize: 10
                 textItem.anchors.verticalCenter: rearLeftWheelBtn.verticalCenter
                 textItem.anchors.right: rearLeftWheelBtn.right
+
                 onClicked: { carView.camera.eye = carView.camera.cameraVectorLeftRear; carView.car.blinkWheel(2);
                              carView.light.position = carView.light.lightVectorLeftRear; dashView.dash.swingDisplay(1)}
             }
@@ -100,7 +101,7 @@ Window {
                 id: frontRightDoorBtn
                 height: root.buttonHeight; width: root.buttonWith;
                 textItem.text: "Door front right"
-                textItem.font.pixelSize: 10
+                textItem.font.pixelSize: 13
                 textItem.anchors.verticalCenter: frontRightDoorBtn.verticalCenter
                 textItem.anchors.right: frontRightDoorBtn.right
                 onClicked: { carView.camera.eye = carView.camera.cameraVectorRightFront; carView.car.swingDoor(1);
